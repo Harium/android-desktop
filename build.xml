@@ -10,7 +10,7 @@
 	<property name="build.dir"   value="bin" />
 	<property name="reports.dir" value="tests"/>
 	
-	<target name="dist" depends="clean, package"/>
+	<target name="dist" depends="init, clean, init, package"/>
 
 	<target name="clean">
 		<delete includeemptydirs="true" >
@@ -19,7 +19,7 @@
 				<exclude name="**/resources/**"/>
 			</fileset>
 		</delete>
-		<mkdir dir="${build.dir}" />
+        <mkdir dir="${build.dir}" />
 	</target>
 
 	<target name="init">
@@ -27,11 +27,11 @@
 	</target>
    
 	<target name="compile">
-    		<javac srcdir="${src.dir}" destdir="${build.dir}" source="1.6" target="1.6" debug="off" />
+    		<javac srcdir="${src.dir}" destdir="${build.dir}" source="1.7" target="1.7" debug="off" />
 	</target>
 
 	<target name="compile-tests">
-		<javac srcdir="${test.dir}" destdir="${build.dir}" includeantruntime="false" source="1.6" target="1.6" debug="off">
+		<javac srcdir="${test.dir}" destdir="${build.dir}" includeantruntime="false" source="1.7" target="1.7" debug="off">
 			<classpath>
 				<fileset dir="${reports.dir}">
 					<include name="*.jar"/>

@@ -40,11 +40,11 @@ public class SQLiteDatabase {
     public long insertOrThrow(String table, String nullColumnHack, ContentValues values) {
         StringBuilder builder = new StringBuilder();
         builder.append("INSERT INTO ");
-        builder.append(tableName);
+        builder.append(table);
         builder.append("(");
 
         StringBuilder valuesBuilder = new StringBuilder();
-        Set<Map.Entry<String, Object>> keys = contentValues.valueSet();
+        Set<Map.Entry<String, Object>> keys = values.valueSet();
 
         List<Object> params = new ArrayList<>();
 
