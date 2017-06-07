@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="Android Desktop" default="dist" basedir=".">
 
-	<property name="version"  value="0.1" />
+	<property name="version"  value="0.2" />
 
 	<property name="libcore"  value="android-desktop-${version}" />
 
