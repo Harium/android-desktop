@@ -28,12 +28,30 @@ public class SQLiteDatabase {
      * @param query
      */
     public void execSQL(String query) {
+        Connection conn = null;
+        Statement stmt = null;
+
         try {
-            Connection conn = DriverManager.getConnection(url);
-            Statement stmt = conn.createStatement();
+            conn = DriverManager.getConnection(url);
+            stmt = conn.createStatement();
             stmt.execute(query);
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -68,9 +86,12 @@ public class SQLiteDatabase {
 
         String sql = builder.toString();
 
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+
         try {
-            Connection conn = DriverManager.getConnection(url);
-            PreparedStatement pstmt = conn.prepareStatement(sql);
+            conn = DriverManager.getConnection(url);
+            pstmt = conn.prepareStatement(sql);
             addValues(pstmt, params);
 
             int affectedRows = pstmt.executeUpdate();
@@ -86,6 +107,21 @@ public class SQLiteDatabase {
 
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null) {
+                    pstmt.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
 
         return -1;
