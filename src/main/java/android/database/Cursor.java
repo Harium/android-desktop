@@ -6,7 +6,7 @@ public class Cursor implements AutoCloseable {
      * Not implemented
      */
     @Deprecated
-    public void close() throws Exception {
+    public void close() {
 
     }
 
@@ -14,8 +14,8 @@ public class Cursor implements AutoCloseable {
      * Not implemented
      */
     @Deprecated
-    public void moveToFirst() {
-
+    public boolean moveToFirst() {
+        return true;
     }
 
     /**

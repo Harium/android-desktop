@@ -10,7 +10,7 @@ public class Log {
 		System.err.println(tag+": "+text);
 	}
 
-	public static void e(String tag, String text, ClassCastException e) {
+	public static void e(String tag, String text, Exception e) {
 		System.err.println(tag+": "+text);
 	}
 }

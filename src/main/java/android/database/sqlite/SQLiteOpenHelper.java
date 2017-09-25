@@ -47,9 +47,8 @@ public class SQLiteOpenHelper {
      * Get the database ready to write
      *
      * @return SQLiteDatabase
-     * @throws SQLiteException
      */
-    public SQLiteDatabase getWritableDatabase() throws SQLiteException {
+    public SQLiteDatabase getWritableDatabase() {
         return database;
     }
 
