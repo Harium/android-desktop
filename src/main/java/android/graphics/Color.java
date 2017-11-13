@@ -15,7 +15,7 @@ public class Color {
     public static final int WHITE = java.awt.Color.WHITE.getRGB();
     public static final int TRANSPARENT = 0;
 
-    /**
+    /*
      * Return the alpha component of a color int. This is the same as saying
      * color >>> 24
      */
@@ -23,7 +23,7 @@ public class Color {
         return color >>> 24;
     }
 
-    /**
+    /*
      * Return the red component of a color int. This is the same as saying
      * (color >> 16) & 0xFF
      */
@@ -31,7 +31,7 @@ public class Color {
         return (color >> 16) & 0xFF;
     }
 
-    /**
+    /*
      * Return the green component of a color int. This is the same as saying
      * (color >> 8) & 0xFF
      */
@@ -39,7 +39,7 @@ public class Color {
         return (color >> 8) & 0xFF;
     }
 
-    /**
+    /*
      * Return the blue component of a color int. This is the same as saying
      * color & 0xFF
      */
@@ -77,7 +77,7 @@ public class Color {
         return (alpha << 24) | (red << 16) | (green << 8) | blue;
     }
 
-    /**
+    /*
      * Parse the color string, and return the corresponding color-int.
      * If the string cannot be parsed, throws an IllegalArgumentException
      * exception. Supported formats are:

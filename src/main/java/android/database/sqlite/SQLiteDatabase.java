@@ -69,7 +69,7 @@ public class SQLiteDatabase {
         this.url = url;
     }
 
-    /**
+    /*
      * Not Implemented
      */
     @Deprecated
@@ -232,8 +232,8 @@ public class SQLiteDatabase {
         return 0;
     }
 
-    /**
-     * Not Implemented
+    /*
+     * Not implemented
      */
     @Deprecated
     public int delete(String tableName, String query, String[] params) {
@@ -250,8 +250,8 @@ public class SQLiteDatabase {
         return 0;
     }
 
-    /**
-     * Not Implemented
+    /*
+     * Not implemented
      */
     @Deprecated
     public Cursor query(String tableName, String[] projection, String where, String[] whereArgs, Object o, Object o1, String orderBy1, Object o2) {

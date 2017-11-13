@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * This class is used to store a set of values that the {@link ContentResolver}
+ * This class is used to store a set of values that the ContentResolver
  * can process.
  */
 public final class ContentValues implements Parcelable {
@@ -67,7 +67,7 @@ public final class ContentValues implements Parcelable {
      * by the Parcel unmarshalling code.
      *
      * @param values the values to start with
-     *               {@hide}
+     *               
      */
     private ContentValues(HashMap<String, Object> values) {
         mValues = values;
@@ -480,18 +480,18 @@ public final class ContentValues implements Parcelable {
         parcel.writeMap(mValues);
     }
 
-    /**
+    /*
      * Unsupported, here until we get proper bulk insert APIs.
-     * {@hide}
+     * 
      */
     @Deprecated
     public void putStringArrayList(String key, ArrayList<String> value) {
         mValues.put(key, value);
     }
 
-    /**
+    /*
      * Unsupported, here until we get proper bulk insert APIs.
-     * {@hide}
+     * 
      */
     @SuppressWarnings("unchecked")
     @Deprecated

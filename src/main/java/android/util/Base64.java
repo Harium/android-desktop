@@ -57,7 +57,7 @@ public class Base64 {
      */
     public static final int URL_SAFE = 8;
 
-    /**
+    /*
      * Flag to pass to {@link Base64OutputStream} to indicate that it
      * should not close the output stream it is wrapping when it
      * itself is closed.
@@ -450,6 +450,7 @@ public class Base64 {
      * @param flags  controls certain features of the encoded output.
      *               Passing {@code DEFAULT} results in output that
      *               adheres to RFC 2045.
+     * @return the encoded String
      */
     public static String encodeToString(byte[] input, int flags) {
         try {

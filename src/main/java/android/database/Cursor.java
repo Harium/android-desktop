@@ -2,7 +2,7 @@ package android.database;
 
 public class Cursor implements AutoCloseable {
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -10,7 +10,7 @@ public class Cursor implements AutoCloseable {
 
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -18,7 +18,7 @@ public class Cursor implements AutoCloseable {
         return true;
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -26,7 +26,7 @@ public class Cursor implements AutoCloseable {
         return false;
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -34,7 +34,7 @@ public class Cursor implements AutoCloseable {
         return 0;
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -42,7 +42,7 @@ public class Cursor implements AutoCloseable {
         return "";
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -50,7 +50,7 @@ public class Cursor implements AutoCloseable {
         return 0;
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -58,7 +58,7 @@ public class Cursor implements AutoCloseable {
         return 0;
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
@@ -66,7 +66,7 @@ public class Cursor implements AutoCloseable {
         return new byte[0];
     }
 
-    /**
+    /*
      * Not implemented
      */
     @Deprecated
