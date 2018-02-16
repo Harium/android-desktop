@@ -323,4 +323,8 @@ public class SQLiteDatabase {
                                      ContentValues initialValues, int conflictAlgorithm) {
         return 0;
     }
+
+    public void close() {
+
+    }
 }

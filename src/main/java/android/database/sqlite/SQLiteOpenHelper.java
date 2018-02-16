@@ -55,4 +55,8 @@ public class SQLiteOpenHelper {
     public SQLiteDatabase getReadableDatabase() {
         return database;
     }
+
+    public void close() {
+        database.close();
+    }
 }
