@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.harium.android</groupId>
     <artifactId>core</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <packaging>jar</packaging>
     <name>Android Core</name>
-    <description>A stub layer to Android</description>
+    <description>Stub classes to run Android projects in Desktop environment</description>
     <url>http://github.com/harium/android-desktop</url>
     <scm>
         <connection>scm:git:git://github.com/harium/android-desktop</connection>
