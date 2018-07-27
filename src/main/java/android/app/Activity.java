@@ -1,15 +1,12 @@
 package android.app;
 
-import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 
-public class Activity {
+public class Activity extends ContextThemeWrapper {
 
-    protected void onCreate (Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
 
     }
 
-    public int checkSelfPermission(String permission) {
-        return PackageManager.PERMISSION_GRANTED;
-    }
 }
