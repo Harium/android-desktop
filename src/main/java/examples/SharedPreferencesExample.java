@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * Delete this class before merge into master
  */
-public class Example extends Activity {
+public class SharedPreferencesExample extends Activity {
 
     public static void main(String[] args) {
 
