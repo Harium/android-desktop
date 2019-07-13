@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.harium.android</groupId>
     <artifactId>core</artifactId>
-    <version>0.3.2</version>
+    <version>0.3.3</version>
     <packaging>jar</packaging>
     <name>Android Core</name>
     <description>Stub classes to run Android projects in Desktop environment</description>
